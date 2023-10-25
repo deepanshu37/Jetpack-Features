@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jetpack Features</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_internal_state_change">InternalStateChange</string>
+    <string name="title_activity_external_state_change">ExternalStateChange</string>
+    <string name="title_activity_text_fields_snack_bars">TextFieldsSnackBars</string>
+</resources>
