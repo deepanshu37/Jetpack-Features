@@ -87,6 +87,8 @@ class MainActivity : ComponentActivity() {
                     Text(text = "Text 3")
                 }
 
+            //Steps to add a new kotlin new kotlin+JDBC activity:
+            //Click inside 'Java' > right click on folder > Click on 'New' > 'Activity' > 'Gallery'
                 //Opening a new activity named 'SecondActivity' on button click
                 Button(onClick = {
                     val navigate = Intent(this@MainActivity,SecondActivity::class.java)
