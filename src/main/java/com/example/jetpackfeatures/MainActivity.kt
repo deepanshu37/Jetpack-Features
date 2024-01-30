@@ -62,23 +62,6 @@ class MainActivity : ComponentActivity() {
                         title = title)
                 }
 
-/*                Text(text = "\nColumns Aligned Center Horizontally:")
-                Column(modifier = Modifier  //Modifier is used to modify the appearance, layout and size of the element
-                    *//*.fillMaxSize()*//*
-                    .fillMaxHeight(0.5F)
-                    .fillMaxWidth()
-                    .padding(top = 40.dp)
-                    .border(5.dp, Color.Black)
-                    .padding(top = 40.dp)
-                    .border(5.dp, Color.Yellow)
-                    .background(Color.Green),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.SpaceBetween) {
-                    Text(text = "Text 1")
-                    Text(text = "Text 2")
-                    Text(text = "Text 3")
-                }*/
-
                 Text(text = "\nThis is how rows display data:")
                 //Row will display horizontally aligned
                 Row {
@@ -117,11 +100,28 @@ class MainActivity : ComponentActivity() {
                     val navigate = Intent(this@MainActivity,TextFieldsSnackBars::class.java)
                     startActivity(navigate)}) {
                     Text(text = "Text Fields SnackBars")
+                    }
                 }
-            }
-            Text(text = "Text 1")
-            Text(text = "Text 2")
-            Text(text = "Text 3")
+
+                //Opening a new activity named 'Keyboard Types' on button click
+                Button(onClick = {
+                   val navigate = Intent(this@MainActivity, KeyboardTypes::class.java)
+                    startActivity(navigate)
+                }) {
+                        Text(text = "See Different types of keyboards")
+                    }
+
+                //Opening a new activity named 'Animation' on button click
+                Button(onClick = {
+                    val navigate = Intent(this@MainActivity, Animation::class.java)
+                    startActivity(navigate)
+                }) {
+                        Text(text = "Start Animation")
+                    }
+                }
+                Text(text = "Text 1")
+                Text(text = "Text 2")
+                Text(text = "Text 3")
         }
     }
 }
